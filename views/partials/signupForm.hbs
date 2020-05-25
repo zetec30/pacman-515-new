@@ -1,0 +1,15 @@
+<h4>Register</h4>
+
+{{#if userExist}}
+<div class="card-panel red">User Already Exists</div>
+{{else}} {{#if userDoesNotExist}}
+<div class="card-panel green">User Created. Welcome</div>
+{{/if}}{{/if}}
+<br>
+<form action="/signup" method="POST">
+    Username<input type="text" name="username" id="username" >
+    Enter Email<input type="text" name="email" id="email" >
+    Password<input type="password" name="password" id="password" >
+    Confirm Password<input type="password" name="confirmPassword" id="confirmPassword" >
+    <input type="submit" value="Sign Up" id="signUpSubmit" class="game-start" >
+</form>

@@ -1,0 +1,15 @@
+<h4>Reset Password</h4>
+{{#if userExist}}
+<div class="card-panel red">User Already Exists</div>
+{{else}} {{#if userDoesNotExist}}
+<div class="card-panel green">User Created. Welcome</div>
+{{/if}}{{/if}}
+<br>
+<div class="messageContainer"></div>
+<form action="/forgot" method="POST">
+    Email<input type="text" name="email">
+    <input type="submit" value='Password-reset' class="game-start"><br><br>
+    
+</form>
+
+
