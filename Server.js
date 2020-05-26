@@ -14,7 +14,7 @@ const passport = require('passport');
 const session = require('express-session');
 
 const port = process.env.PORT || 3003;// .env should be in a seperate file for security reasons/port no this case 3003
-const mongoURL = process.env.MONGOURL || 'mongodb+srv://mike:DIgitalcat14!@cluster0-fssfj.mongodb.net/Pacman-515?retryWrites=true&w=majority';//atlas database link
+const mongoURL = process.env.mongoURL || 'mongodb+srv://mike:DIgitalcat14!@cluster0-fssfj.mongodb.net/Pacman-515?retryWrites=true&w=majority';//atlas database link
 
 const { isAuth } = require('./middleware/isAuth');
 require('./middleware/passport')(passport);
