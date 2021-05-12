@@ -23,7 +23,7 @@
     "mongoose": "^5.9.11",
     "node": "^14.2.0",
     "node-mailer": "^0.1.1",
-    "nodemailer": "^6.4.6",
+    "nodemailer": "^6.4.16",
     "npm-add-dependencies": "^0.3.1",
     "passport": "^0.4.1",
     "passport-local": "^1.0.0",
